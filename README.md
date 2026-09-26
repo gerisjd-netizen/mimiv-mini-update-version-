@@ -38,3 +38,16 @@ MIMIC Mini is a compact infrared (IR) cloner and universal remote device. It is 
 ## 📁 SD Card Structure & Usage
 
 Upon inserting an SD card for the first time, the device will automatically generate three directories:
+### 1. `saved_ir/`
+* Captured IR signals are saved here. You can set the target capture format (`.ir` or `.txt`) in the device settings menu.
+* Files in this folder can be renamed freely.
+* If you place a multi-code `.ir` file in this folder, opening it on the device will display a sub-menu containing each individual code, allowing you to trigger them selectively one by one.
+
+### 2. `universal/`
+* If a multi-code `.ir` file is placed in the `universal` directory, the device will sequentially play back **all** IR codes inside the file one after another (e.g., universal power-off sequence). You will not be able to select individual codes in this mode.
+
+---
+
+## ⚙️ Settings
+
+* **Transmitter Selection:** Through the system settings, you can toggle between using the internal IR transmitter array or an external IR module/emitter.
